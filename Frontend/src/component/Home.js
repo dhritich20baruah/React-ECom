@@ -4,6 +4,7 @@ import imagePremium from './images/imagePremium.jpg'
 import imageBudget from './images/imageBudget.png'
 import accessories from './images/imageAccessories.jpg'
 import image1 from './images/img1.jpg'
+import ProductCard from './ProductCard'
 
 const Home = () => {
     return (
@@ -22,7 +23,7 @@ const Home = () => {
                 </div>
             </div>
            </section>
-           <section id="slides" className='flex flex-row justify-evenly py-5 bg-black text-white font-bold'>
+           <section id="slides" className='flex flex-row justify-evenly py-5 bg-gradient-to-b from-[#292828] to-black text-white font-bold'>
             <div className='flex flex-col justify-center'>
                 <div><img src={imagePremium} alt="" className='w-56 h-56 object-contain'/></div>
                 <h3 className='text-lg text-center'>Premium Laptops</h3>
@@ -43,6 +44,10 @@ const Home = () => {
                 <h3 className='text-lg text-center'>Accessories</h3>
                 <button className='p-3 bg-red-600 hover:bg-orange-400 hover:cursor-pointer'>Shop Now</button>
             </div>
+           </section>
+           
+           <section id="latestProduct">
+            <ProductCard/>
            </section>
         </>
     )
