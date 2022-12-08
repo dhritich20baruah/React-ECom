@@ -1,5 +1,5 @@
 import React from 'react'
-import image5 from './images/img5.jpg'
+import image5 from './images/sofa.jpg'
 import imagePremium from './images/imagePremium.jpg'
 import imageBudget from './images/imageBudget.png'
 import accessories from './images/imageAccessories.jpg'
@@ -11,7 +11,7 @@ const Home = () => {
         <>
            <section id="home">
             <div className='relative'>
-                <img src={image5} alt="" />
+                <img src={image5} alt="" className='w-[100%]'/>
                 <div className='absolute text-white top-14 md:top-36 right-36 text-xl md:text-4xl'>
                     <h1 className='italic font-serif'>Grand Festive Offers</h1>
                     <hr />
