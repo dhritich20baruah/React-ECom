@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import logo from './images/pepperfryLogo.jpg'
 
+
 const Nav = () => {
     const [visibility, setVisibility] = useState('hidden')
 
@@ -68,14 +69,16 @@ const Nav = () => {
             {/* SIDENAV */}
             <div className={visibility?'hidden':null}>
             <div className='h-[100vh] bg-white absolute w-[100%] z-20 top-0'>
-                 <div className='flex flex-row align-middle'>
-                    <i className="material-icons basis-1/6" onClick={()=>{setVisibility(!visibility)}}>arrow_back</i>
-                    <div className='bg-orange-600 text-white w-10 h-10 rounded-full relative basis-1/6'><h2 className='centerDiv absolute'>AS</h2></div>
-                    <div className='basis-1/6'>
-                        <p>Hey<br/><span>My Account</span></p>
+                 <div className='flex flex-row align-middle text-white h-16 bg-black'>
+                    <i className="material-icons basis-1/12 py-4 px-2" onClick={()=>{setVisibility(!visibility)}}>arrow_back</i>
+                    <div className='basis-3/5 py-2 text-sm'>
+                        <p><span className='text-orange-700 font-semibold underline'>SIGN UP</span> <span className='text-orange-700 font-semibold'>AND GET</span><br/>Get Rs.10000 Credits</p>
                     </div>
-                    <div className='basis-1/6'>Wallet</div>
-                    <div className='basis-1/6'><i className="material-icons">home</i><br/>Home</div>
+                    <div className='flex flex-col basis-1/5 bg-orange-500 text-center py-2'>
+                        <i className="material-icons">input</i>Login</div>
+                    <div className='flex flex-col basis-1/5 text-center py-2'>
+                        <i className="material-icons">home</i>Home
+                    </div>
                  </div>
                  <div>
                     <div></div>
