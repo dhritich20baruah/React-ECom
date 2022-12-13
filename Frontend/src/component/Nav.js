@@ -81,7 +81,19 @@ const Nav = () => {
                     </div>
                  </div>
                  <div>
-                    <div></div>
+                    <div>
+                        <ul>
+                            <li>Furniture</li>
+                            <li>Mattresses</li>
+                            <li>Home Decore</li>
+                            <li>Lighting</li>
+                            <li>Kitchen & Dining</li>
+                            <li>Furnishings</li>
+                            <li>Appliances</li>
+                            <li>Pets</li>
+                            <li>Modular</li>
+                        </ul>
+                    </div>
                     <div></div>
                  </div>
             </div>
